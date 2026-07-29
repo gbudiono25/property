@@ -1,0 +1,6 @@
+{
+  "name": "Casa Loka Residence",
+  "description": "Luxury real estate & residential community in Cisauk, Serpong featuring infinity swimming pool, communal spaces, and dedicated coworking facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
