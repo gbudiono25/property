@@ -374,6 +374,55 @@ p:last-child {
   color: var(--color-primary);
 }
 
+@media (max-width: 991px) {
+  .header-actions {
+    position: fixed;
+    right: 0.85rem;
+    bottom: 0.85rem;
+    z-index: 120;
+  }
+
+  .header-actions .btn-whatsapp.btn-sm {
+    padding: 0.75rem;
+    min-width: 52px;
+    min-height: 52px;
+    border-radius: 50%;
+    box-shadow: 0 10px 22px rgba(37, 211, 102, 0.35);
+    justify-content: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    animation: waPulse 2.2s ease-in-out infinite;
+  }
+
+  .header-actions .btn-whatsapp.btn-sm:hover {
+    transform: translateY(-2px) scale(1.02);
+    box-shadow: 0 12px 26px rgba(37, 211, 102, 0.42);
+  }
+
+  .header-actions .btn-whatsapp.btn-sm svg {
+    width: 18px;
+    height: 18px;
+    margin: 0;
+  }
+
+  .header-actions .btn-whatsapp.btn-sm span {
+    display: none;
+  }
+
+  .mobile-nav-toggle {
+    z-index: 121;
+  }
+}
+
+@keyframes waPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.32), 0 10px 22px rgba(37, 211, 102, 0.35);
+  }
+  50% {
+    box-shadow: 0 0 0 12px rgba(37, 211, 102, 0), 0 12px 26px rgba(37, 211, 102, 0.42);
+  }
+}
+
 /* --------------------------------------------------------------------------
    BUTTONS & CALL TO ACTION
    -------------------------------------------------------------------------- */
